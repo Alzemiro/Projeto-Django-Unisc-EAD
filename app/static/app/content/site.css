@@ -1,4 +1,5 @@
 body {
+    padding-top: 50px;
     padding-bottom: 20px;
 }
 
@@ -38,6 +39,7 @@ input[type="checkbox"].input-validation-error {
 
 .validation-summary-valid {
     display: none;
+
 }
 
 .blog .carousel-indicators {
@@ -59,4 +61,5 @@ input[type="checkbox"].input-validation-error {
 
 .blog .carousel-indicators .active {
 background: #707070;
+
 }
