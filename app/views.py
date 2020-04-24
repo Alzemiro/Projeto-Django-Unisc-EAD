@@ -43,3 +43,29 @@ def about(request):
             'year':datetime.now().year,
         }
     )
+
+
+def site(request):
+    assert isinstance(request, HttpRequest)
+    return render(
+        request,
+        'app/site.html',
+        {
+            'title': 'Site',
+            'message': 'Your application description page.',
+            'year': datetime.now().year,
+        }
+    )
+
+
+def register(request):
+    assert isinstance(request, HttpRequest)
+    return render(
+        request,
+        'app/register.html',
+        {
+            'title': 'Site',
+            'message': 'Your application description page.',
+            'year': datetime.now().year,
+        }
+    )

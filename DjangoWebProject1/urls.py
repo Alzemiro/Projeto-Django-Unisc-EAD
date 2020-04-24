@@ -13,6 +13,8 @@ urlpatterns = [
     path('', views.home, name='home'),
     path('contact/', views.contact, name='contact'),
     path('about/', views.about, name='about'),
+    path('site/', views.site, name='site'),
+    path('site/register', views.register, name='register'),
     path('login/',
          LoginView.as_view
          (

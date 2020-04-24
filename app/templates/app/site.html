@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }} - My Django Application</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'app/content/site.css' %}" />
+    <script src="{% static 'app/scripts/modernizr-2.6.2.js' %}"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        $('#blogCarousel').carousel({
+            interval: 5000
+        });
+
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="row blog">
+            <div class="col-md-12">
+                <div id="blogCarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#blogCarousel" data-slide-to="0"></li>
+                        <li data-target="#blogCarousel" data-slide-to="1" class="active"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <a href="#">
+                                        <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" src="{% static 'app/assets/img02.jpg' %}" data-holder-rendered="true" style="height: 225px; width: 100%; margin-top: 10%; border-radius: 20px; border: 5px solid; opacity: 60%">
+                                    </a>
+                                </div>
+                                <div class="col-md-3">
+                                    <a href="#">
+                                        <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="{% static 'app/assets/img02.jpg' %}" data-holder-rendered="true" style="height: 225px; width: 100%; margin-top: 10%; border-radius: 10px; border-radius: 20px; border: 5px solid;">
+                                    </a>
+                                </div>
+                                <div class="col-md-3">
+                                    <a href="#">
+                                        <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="{% static 'app/assets/img02.jpg' %}" data-holder-rendered="true" style="height: 225px; width: 100%; margin-top: 10%; border-radius: 10px; border-radius: 20px; border: 5px solid; opacity: 60%">
+                                    </a>
+                                </div>
+                                <div class="col-md-3">
+                                    <a href="#">
+                                        <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="{% static 'app/assets/img02.jpg' %}" data-holder-rendered="true" style="height: 225px; width: 100%; margin-top: 10%; border-radius: 10px; border-radius: 20px; border: 5px solid; opacity: 60%">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <a href="#">
+                                        <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="{% static 'app/assets/img02.jpg' %}" data-holder-rendered="true" style="height: 225px; width: 100%; margin-top: 10%; border-radius: 10px; border-radius: 20px; border: 5px solid; opacity: 60%">
+                                    </a>
+                                </div>
+                                <div class="col-md-3">
+                                    <a href="#">
+                                        <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="{% static 'app/assets/img02.jpg' %}" data-holder-rendered="true" style="height: 225px; width: 100%; margin-top: 10%; border-radius: 10px; border-radius: 20px; border: 5px solid; opacity: 60%">
+                                    </a>
+                                </div>
+                                <div class="col-md-3">
+                                    <a href="#">
+                                        <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="{% static 'app/assets/img02.jpg' %}" data-holder-rendered="true" style="height: 225px; width: 100%; margin-top: 10%; border-radius: 10px; border-radius: 20px; border: 5px solid; opacity: 60%">
+                                    </a>
+                                </div>
+                                <div class="col-md-3">
+                                    <a href="#">
+                                        <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="{% static 'app/assets/img02.jpg' %}" data-holder-rendered="true" style="height: 225px; width: 100%; margin-top: 10%; border-radius: 10px; border-radius: 20px; border: 5px solid; opacity: 60%;">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex justify-content-center align-items-center">
+        <img src="{% static 'app/assets/logo-bg.png' %}" style="height: 220px; width: 200px; background-color: #ffffff; color: #ffffff; border: 0px;" />
+    </div>
+    <div class="d-flex justify-content-end" style="margin-top: -105px">
+        <button style="margin-right:80px; width: 200px; color: #ffffff; margin-bottom: 40px; margin-top: 20px; background-color: #ff7316; border: 0px; border-radius: 16px" type="button" class="btn btn-sm btn-outline-secondary"><a style="color: #ffffff" href="register">Login/Cadastre-se</a></button>
+    </div>
+  <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4 box-shadow" style="display: block; text-align: center; background-color: #ffc93b">
+            <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="{% static 'app/assets/img02.jpg' %}" data-holder-rendered="true" style="height: 225px; width: 80%; margin-top: 10%; border-radius: 10px">
+            <div class="card-body" style="background-color: #ffc93b">
+              <p class="card-text" style="text-align: center">Pedro</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <button style="background-color: #ff7316; color: #ffffff; border: 0px; border-radius: 16px" type="button" class="btn btn-sm btn-outline-secondary">Informações</button>
+                <button style="background-color: #ff7316; color: #ffffff; border: 0px; border-radius: 16px" type="button" class="btn btn-sm btn-outline-secondary">Adotar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 box-shadow" style="display: block; text-align: center; background-color: #ffc93b">
+            <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="{% static 'app/assets/img02.jpg' %}" data-holder-rendered="true" style="height: 225px; width: 80%; margin-top: 10%; border-radius: 10px">
+            <div class="card-body" style="background-color: #ffc93b">
+              <p class="card-text" style="text-align: center">Pedro</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <button style="background-color: #ff7316; color: #ffffff; border: 0px; border-radius: 16px" type="button" class="btn btn-sm btn-outline-secondary">Informações</button>
+                <button style="background-color: #ff7316; color: #ffffff; border: 0px; border-radius: 16px" type="button" class="btn btn-sm btn-outline-secondary">Adotar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 box-shadow" style="display: block; text-align: center; background-color: #ffc93b">
+            <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="{% static 'app/assets/img02.jpg' %}" data-holder-rendered="true" style="height: 225px; width: 80%; margin-top: 10%; border-radius: 10px">
+            <div class="card-body" style="background-color: #ffc93b">
+              <p class="card-text" style="text-align: center">Pedro</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <button style="background-color: #ff7316; color: #ffffff; border: 0px; border-radius: 16px" type="button" class="btn btn-sm btn-outline-secondary">Informações</button>
+                <button style="background-color: #ff7316; color: #ffffff; border: 0px; border-radius: 16px" type="button" class="btn btn-sm btn-outline-secondary">Adotar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 box-shadow" style="display: block; text-align: center; background-color: #ffc93b">
+            <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="{% static 'app/assets/img02.jpg' %}" data-holder-rendered="true" style="height: 225px; width: 80%; margin-top: 10%; border-radius: 10px">
+            <div class="card-body" style="background-color: #ffc93b">
+              <p class="card-text" style="text-align: center">Pedro</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <button style="background-color: #ff7316; color: #ffffff; border: 0px; border-radius: 16px" type="button" class="btn btn-sm btn-outline-secondary">Informações</button>
+                <button style="background-color: #ff7316; color: #ffffff; border: 0px; border-radius: 16px" type="button" class="btn btn-sm btn-outline-secondary">Adotar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 box-shadow" style="display: block; text-align: center; background-color: #ffc93b">
+            <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="{% static 'app/assets/img02.jpg' %}" data-holder-rendered="true" style="height: 225px; width: 80%; margin-top: 10%; border-radius: 10px">
+            <div class="card-body" style="background-color: #ffc93b">
+              <p class="card-text" style="text-align: center">Pedro</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <button style="background-color: #ff7316; color: #ffffff; border: 0px; border-radius: 16px" type="button" class="btn btn-sm btn-outline-secondary">Informações</button>
+                <button style="background-color: #ff7316; color: #ffffff; border: 0px; border-radius: 16px" type="button" class="btn btn-sm btn-outline-secondary">Adotar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 box-shadow" style="display: block; text-align: center; background-color: #ffc93b">
+            <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="{% static 'app/assets/img02.jpg' %}" data-holder-rendered="true" style="height: 225px; width: 80%; margin-top: 10%; border-radius: 10px">
+            <div class="card-body" style="background-color: #ffc93b">
+              <p class="card-text" style="text-align: center">Pedro</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <button style="background-color: #ff7316; color: #ffffff; border: 0px; border-radius: 16px" type="button" class="btn btn-sm btn-outline-secondary">Informações</button>
+                <button style="background-color: #ff7316; color: #ffffff; border: 0px; border-radius: 16px" type="button" class="btn btn-sm btn-outline-secondary">Adotar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</body>
+</html>
+
